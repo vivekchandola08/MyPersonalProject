@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}  About Me  {% endblock title %}
+
+{% block about_active %} active {% endblock about_active %}
+
+{% block body %}   
+
+<div class="container">
+    <br>
+    <h3>Hello, I am Vivek Chandola.<br>
+        (Full Stack Developer)<br>
+    </h3>
+    <br><br><br>
+    <p>
+        <a href="https://www.linkedin.com/in/vivekchandola08" target="_blank">
+            <img src="./static/images/linkedin.png" width="70" height="70">
+        </a>
+        <a href="https://m.facebook.com/vivek.chandola.7" target="_blank">
+            <img src="./static/images/facebook.png" width="70" height="70">
+        </a>  
+        <a href="https://www.instagram.com/vivek_chandola11/" target="_blank">
+            <img src="./static/images/instagram.png" width="70" height="70">
+        </a>
+        <a href="https://mobile.twitter.com/VivekChandola4" target="_blank">
+            <img src="./static/images/twitter.png" width="70" height="70">
+        </a>
+    </p>
+</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide my-2 px=1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./static/images/about.jpg" width="1600" height="600"/ class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
+

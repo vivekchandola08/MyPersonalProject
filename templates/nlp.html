@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}  Sentiment Analysis  {% endblock title %}
+
+{% block nlp_active %} active {% endblock nlp_active %}
+
+{% block body %}   
+
+<div id="carouselExampleSlidesOnly" class="carousel slide my-2 px=1" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./static/images/nlp.jpg" width="1600" height="600"/ class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<div class="container py-4">
+    <h2 class="text-center"> Sentiment Analysis </h2>
+    <form method="POST" action="/nlp">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="des">Write Your Views*</label>
+            <textarea class="form-control" id="des" name="des" rows="3" required autofocus>{{msg}}</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div class="container">
+ <textarea class="form-control" id="des" name="des" rows="2">
+     {{level}} 
+ 
+ </textarea>
+</div>
+    
+{% endblock body %}

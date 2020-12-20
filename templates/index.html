@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}  CodeWithVicky  {% endblock title %}
+
+{% block home_active %} active {% endblock home_active %}
+
+{% block body %} <br>
+
+
+<h1 style="text-align: center;"> Welcome {{request.user|capfirst}} ...... How are you?</h1>
+<h2 style="text-align: center;">Welcome To This World and Explore it!</h2>
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide mx-5 my-2 px=1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./static/images/index3.jpg" width="1600" height="600"/ class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
